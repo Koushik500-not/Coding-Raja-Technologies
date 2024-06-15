@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Generator</h1>
+        <div class="form-container">
+            <form id="resumeForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <h3>Education</h3>
+                <table id="educationTable">
+                    <tr>
+                        <th colspan="2">Gitam Institute of Technology & Sciences</th>
+                    </tr>
+                    <tr>
+                        <td>B.Tech</td>
+                        <td><input type="text" name="gitam_degree"></td>
+                    </tr>
+                    <tr>
+                        <td>CGPA</td>
+                        <td><input type="text" name="gitam_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <td>Academic Year</td>
+                        <td><input type="text" name="gitam_year"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Sri Viswa Junior College</th>
+                    </tr>
+                    <tr>
+                        <td>Group</td>
+                        <td><input type="text" name="sri_group"></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td><input type="text" name="sri_percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Academic Year</td>
+                        <td><input type="text" name="sri_year"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Swetha Chalapathi High School</th>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td><input type="text" name="swetha_ssc"></td>
+                    </tr>
+                    <tr>
+                        <td>CGPA</td>
+                        <td><input type="text" name="swetha_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <td>Academic Year</td>
+                        <td><input type="text" name="swetha_year"></td>
+                    </tr>
+                </table>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" required></textarea>
+
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" required></textarea>
+
+                <button type="button" id="generateButton">Generate Resume</button>
+            </form>
+        </div>
+        <div class="resume-container">
+            <h2>Your Resume</h2>
+            <div id="resumeOutput"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
